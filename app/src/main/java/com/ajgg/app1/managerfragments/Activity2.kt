@@ -12,7 +12,7 @@ class Activity2 : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
+        //Segunda activity que recoge un valor mandado desde la primera (  un int `5´)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
         //Activity que solo muestra un toast

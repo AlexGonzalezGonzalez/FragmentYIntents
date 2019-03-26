@@ -12,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
+            //id_Horizontal es un boton que solo esta en el layout horizontal, si es null esta en portrait
             if (id_horizontal != null) {
-
+                //Cargamos el fragment si esta en horizontal
 
                 supportFragmentManager
                         .beginTransaction()
@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
                         .commit()
 
             } else {
+                //Si esta en portrait le damos un listener al boton creador para que haga intents
                 bCreador.setOnClickListener { view ->
                 val intent = Intent(this, Activity2::class.java).apply {
                     putExtra("id", 5)
